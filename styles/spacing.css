@@ -1,0 +1,22 @@
+:root {
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-sm-md: 0.75rem;
+  --space-md: 1rem;
+  --space-md-lg: 1.5rem;
+  --space-lg: 2rem;
+  --space-xlg: 2.5rem;
+  --space-xl: 3rem;
+  --space-xxl: 4rem;
+
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.2rem;
+  --font-xl: 1.5rem;
+  --font-xxl: 2rem;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-loose: 1.75;
+}
