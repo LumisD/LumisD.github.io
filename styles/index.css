@@ -1,74 +1,183 @@
 @import url("colors.css");
 @import url("spacing.css");
 
+/* Reset & base */
 body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
-  padding: var(--space-lg);
   background-color: var(--color-background);
   color: var(--color-text);
+  padding: 0; /* We'll handle padding in layout */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-header {
+/* Sticky header hero section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--space-lg) var(--space-xl);
+  background-color: var(--color-background);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--color-border);
+  min-height: 140px;
+  box-sizing: border-box;
+}
+
+/* Left side: name */
+.hero-left {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+}
+.hero-left h1 {
+  font-size: var(--font-xxl);
+  margin: 0;
+}
+
+/* Center: subtitle and intro */
+.hero-center {
+  flex: 2;
+  min-width: 250px;
   text-align: center;
-  margin-bottom: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--space-md);
 }
 
-h1 {
-  font-size: var(--space-xlg);
-  margin-bottom: var(--space-sm);
-}
-
-p {
-  font-size: var(--font-md);
-  line-height: var(--line-height-normal);
-  margin-bottom: var(--space-md);
-}
-
-section p + p {
-  margin-top: var(--space-sm);
-}
-
-p.subtitle {
+.subtitle {
   font-size: var(--font-lg);
   color: var(--color-muted);
+  margin: 0 0 var(--space-md) 0;
+  white-space: nowrap;
 }
 
-nav {
+.intro-text p {
+  margin: 0 var(--space-sm) var(--space-sm) var(--space-sm);
+  font-size: var(--font-md);
+  line-height: var(--line-height-normal);
+}
+
+/* Right side: nav buttons */
+.hero-right {
+  flex: 1;
+  min-width: 150px;
   display: flex;
-  justify-content: center;
-  gap: var(--space-lg);
-  margin-top: var(--space-lg);
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: var(--space-md);
 }
-
-nav a {
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.nav-links a {
   text-decoration: none;
   color: var(--color-primary);
   font-weight: bold;
+  font-size: var(--font-md);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: var(--color-primary);
+  color: white;
+  outline: none;
+  cursor: pointer;
 }
 
-nav a:hover {
+/* Main content scrollable area */
+main {
+  flex-grow: 1;
+  padding: var(--space-xl) var(--space-lg);
+  box-sizing: border-box;
+}
+
+/* Columns section */
+.columns {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+  min-width: 250px;
+  background-color: var(--color-background-alt);
+  border-radius: 8px;
+  padding: var(--space-md-lg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.column h2 {
+  margin-top: 0;
+  font-size: var(--font-xl);
+  color: var(--color-primary);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  font-size: var(--font-sm);
+  color: var(--color-footer);
+  background-color: var(--color-background);
+}
+
+footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+  margin: 0 var(--space-sm);
+}
+
+footer a:hover,
+footer a:focus {
   color: var(--color-accent);
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    gap: var(--space-sm);
+/* Responsive behavior */
+@media (max-width: 900px) {
+  .hero {
+    flex-wrap: wrap;
+    min-height: auto;
+    padding: var(--space-md);
   }
-}
+  .hero-left,
+  .hero-center,
+  .hero-right {
+    flex: 100%;
+    min-width: auto;
+    text-align: center;
+    padding: var(--space-sm) 0;
+  }
+  .hero-right {
+    order: 3;
+  }
+  .nav-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-md);
+  }
+  .nav-links a {
+    padding: var(--space-sm) var(--space-lg);
+  }
 
-section {
-  max-width: 700px;
-  margin: var(--space-xl) auto;
-  text-align: center;
-  padding: 0 var(--space-md);
-}
-
-footer {
-  text-align: center;
-  margin-top: var(--space-xxl);
-  font-size: var(--font-sm);
-  color: var(--color-footer);
+  .columns {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
 }
