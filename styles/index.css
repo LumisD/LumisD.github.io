@@ -45,7 +45,7 @@ body {
 }
 .subtitle {
   font-size: var(--font-lg);
-  color: var(--color-muted);
+  color: var(--color-subtitle);
   margin-bottom: var(--space-md);
 }
 .intro-text p {
@@ -181,7 +181,7 @@ main {
 
   .subtitle {
     font-size: var(--font-lg);
-    color: var(--color-muted);
+    color: var(--color-subtitle);
     margin-bottom: var(--space-md);
   }
 
