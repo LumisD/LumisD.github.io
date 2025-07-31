@@ -181,7 +181,7 @@ main {
 
   .subtitle {
     font-size: var(--font-lg);
-    color: var(--color-subtitle);
+    color: var(--color-subtitle) !important;
     margin-bottom: var(--space-md);
   }
 
