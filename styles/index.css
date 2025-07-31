@@ -175,12 +175,13 @@ main {
   .hero-center {
     width: 100%;
     max-width: 100%;
-    margin: var(--space-md) 0 0 0;
+    margin: 0;
     padding: 0 var(--space-md);
     text-align: center;
   }
 
   .hero-center h1 {
+    margin-top: 0;
     font-size: var(--font-xxl);
     margin-bottom: var(--space-sm-md);
   }
