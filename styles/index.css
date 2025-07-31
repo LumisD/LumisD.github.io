@@ -142,20 +142,19 @@ main {
     margin-bottom: var(--space-md);
   }
 
-  .hero-center {
-    margin-left: 0;
-    padding: 0 var(--space-md);
+  .hero-left {
+    margin-top: var(--space-sm);
+    padding-top: 0;
   }
 
-  .hero-right {
-    flex-direction: row;
-    justify-content: center;
-    gap: var(--space-md);
+  .hero-center {
+    margin: 0 auto;
+    padding: 0 var(--space-sm);
   }
 
   .columns {
     display: block;
-    margin: var(--space-md) var(--space-md) var(--space-lg) var(--space-md);
+    margin: var(--space-md) var(--space-md) var(--space-lg);
   }
 
   .column {
