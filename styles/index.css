@@ -129,17 +129,17 @@ main {
 
 @media (max-width: 768px) {
   .hero {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: var(--space-md);
   }
 
   .hero-left,
   .hero-center,
   .hero-right {
-    float: none;
     width: 100%;
     text-align: center;
-    position: static;
     margin-bottom: 0;
   }
 
@@ -153,7 +153,6 @@ main {
   }
 
   .hero-center {
-    margin: 0 auto;
     padding: 0 var(--space-md);
     text-align: center;
   }
@@ -163,14 +162,19 @@ main {
     justify-content: center;
     gap: var(--space-sm);
     margin-bottom: var(--space-sm-md);
+    position: static;
   }
 
   .columns {
     display: block;
-    margin-top: 0;
+    margin: 0;
+    padding: 0 var(--space-sm);
   }
 
   .column {
     margin-bottom: var(--space-md);
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--space-md);
   }
 }
