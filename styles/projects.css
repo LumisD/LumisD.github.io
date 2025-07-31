@@ -5,8 +5,8 @@
 @media (max-width: 767px) {
   body {
     font-family: "Segoe UI", sans-serif;
-    margin: 0 var(--space-lg) var(--space-lg) var(--space-lg);
-    padding: 0 var(--space-lg) var(--space-lg) var(--space-lg);
+    margin: 0;
+    padding: 0;
     background-color: var(--color-background);
     color: var(--color-text);
   }
@@ -88,7 +88,7 @@
 @media (min-width: 768px) {
   body {
     font-family: "Segoe UI", sans-serif;
-    margin: var(--space-lg);
+    margin: var(--space-md) var(--space-lg) var(--space-lg) var(--space-lg);
     padding: var(--space-lg);
     background-color: var(--color-background);
     color: var(--color-text);
