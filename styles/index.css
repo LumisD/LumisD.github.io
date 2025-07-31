@@ -130,6 +130,7 @@ main {
 @media (max-width: 768px) {
   .hero {
     display: block;
+    padding: var(--space-md);
   }
 
   .hero-left,
@@ -139,25 +140,37 @@ main {
     width: 100%;
     text-align: center;
     position: static;
-    margin-bottom: var(--space-md);
+    margin-bottom: 0;
   }
 
   .hero-left {
-    margin-top: var(--space-sm);
+    margin-top: 0;
     padding-top: 0;
+  }
+
+  .profile-photo {
+    margin-top: 0;
   }
 
   .hero-center {
     margin: 0 auto;
-    padding: 0 var(--space-sm);
+    padding: 0 var(--space-md);
+    text-align: center;
+  }
+
+  .hero-right {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm-md);
   }
 
   .columns {
     display: block;
-    margin: var(--space-md) var(--space-md) var(--space-lg);
+    margin-top: 0;
   }
 
   .column {
-    margin-bottom: var(--space-md-lg);
+    margin-bottom: var(--space-md);
   }
 }
