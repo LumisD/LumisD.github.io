@@ -48,6 +48,12 @@ body {
   color: var(--color-subtitle);
   margin-bottom: var(--space-md);
 }
+.subtitle-line {
+  display: inline;
+}
+.subtitle .subtitle-line:not(:last-child)::after {
+  content: " | ";
+}
 .intro-text p {
   margin-bottom: var(--space-sm);
 }
@@ -181,8 +187,14 @@ main {
 
   .subtitle {
     font-size: var(--font-lg);
-    color: var(--color-subtitle) !important;
+    color: var(--color-accent);
     margin-bottom: var(--space-md);
+  }
+  .subtitle-line {
+    display: block;
+  }
+  .subtitle .subtitle-line:not(:last-child)::after {
+    content: "";
   }
 
   .intro-text p {
