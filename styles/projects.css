@@ -6,7 +6,7 @@
   body {
     font-family: "Segoe UI", sans-serif;
     margin: 0 var(--space-lg) var(--space-lg) var(--space-lg);
-    padding: 0 var(--space-lg) var(--space-lg) var(--space-lg);
+    padding: var(--space-lg);
     background-color: var(--color-background);
     color: var(--color-text);
   }
@@ -15,7 +15,7 @@
   h1 {
     text-align: center;
     margin-bottom: var(--space-lg);
-    font-size: var(--font-md);
+    font-size: var(--font-xl);
   }
 
   p {
@@ -117,7 +117,7 @@
   }
 
   h1 {
-    font-size: var(--font-md);
+    font-size: var(--font-xl);
     margin-bottom: var(--space-sm);
     text-align: center;
   }
