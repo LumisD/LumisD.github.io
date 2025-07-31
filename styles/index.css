@@ -175,7 +175,7 @@ main {
   .hero-center {
     width: 100%;
     max-width: 100%;
-    margin: 0;
+    margin: var(--space-md) 0 0 0;
     padding: 0 var(--space-md);
     text-align: center;
   }
