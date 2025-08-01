@@ -5,7 +5,7 @@
 @media (max-width: 767px) {
   body {
     font-family: "Segoe UI", sans-serif;
-    margin: 0 var(--space-md) var(--space-md) var(--space-md);
+    margin: 0 var(--space-sm-md) var(--space-md) var(--space-sm-md);
     padding: 0;
     background-color: var(--color-background);
     color: var(--color-text);
