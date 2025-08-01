@@ -88,5 +88,15 @@
     </div>
 
     <a class="back" href="index.html">← Back to Home</a>
+
+    <script>
+      function toggleJobs() {
+        const hiddenJobs = document.querySelectorAll(".job-entry.hidden");
+        hiddenJobs.forEach((el) => el.classList.remove("hidden"));
+
+        const btn = document.querySelector(".show-more-btn");
+        if (btn) btn.style.display = "none";
+      }
+    </script>
   </body>
 </html>

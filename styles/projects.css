@@ -11,6 +11,49 @@
     color: var(--color-text);
   }
 
+  .job-entry {
+    margin-bottom: var(--space-lg);
+    text-align: left;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: var(--space-sm);
+  }
+
+  .company {
+    color: var(--color-primary);
+  }
+
+  .date {
+    color: var(--color-muted);
+  }
+
+  .job-role {
+    font-style: italic;
+    margin-bottom: var(--space-sm);
+  }
+
+  .job-description p + p {
+    margin-top: var(--space-xs);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .show-more-btn {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--space-xs);
+    cursor: pointer;
+    margin-top: var(--space-md);
+  }
+
   header,
   h1 {
     text-align: center;
