@@ -1,5 +1,5 @@
-@import url("colors.css");
-@import url("spacing.css");
+@import url("./colors.css");
+@import url("./spacing.css");
 
 /* ===== Mobile Styles (≤767px) ===== */
 @media (max-width: 767px) {
@@ -12,7 +12,7 @@
   }
 
   .projects-row {
-    display: flex;
+    display: block;
     gap: var(--space-lg);
     justify-content: center;
     align-items: stretch;
@@ -64,6 +64,21 @@
     content: "▼";
   }
 
+  .job-details[open] .job-description {
+    animation: expand 0.3s ease-in-out;
+  }
+
+  @keyframes expand {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .job-description {
     margin-top: var(--space-xs);
   }
@@ -85,15 +100,22 @@
   }
 
   .job-description ul {
-    padding: 0;
-    list-style: none;
-    margin: var(--space-md) auto;
+    padding-left: 1.2em;
+    list-style: disc;
   }
 
   .job-description li {
     margin-bottom: var(--space-md);
     border-bottom: 1px solid #ccc;
     padding-bottom: var(--space-sm);
+  }
+
+  .job-description li::before {
+    content: "•";
+    color: var(--color-primary);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
 
   .date {
@@ -195,6 +217,21 @@
     content: "▼";
   }
 
+  .job-details[open] .job-description {
+    animation: expand 0.3s ease-in-out;
+  }
+
+  @keyframes expand {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .job-description {
     margin-top: var(--space-xs);
   }
@@ -216,16 +253,22 @@
   }
 
   .job-description ul {
-    max-width: 700px;
-    margin: var(--space-lg) auto;
-    padding: 0;
-    list-style: none;
+    padding-left: 1.2em;
+    list-style: disc;
   }
 
   .job-description li {
     margin-bottom: var(--space-md-lg);
     border-bottom: 1px solid #ccc;
     padding-bottom: var(--space-md);
+  }
+
+  .job-description li::before {
+    content: "•";
+    color: var(--color-primary);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
 
   nav {
