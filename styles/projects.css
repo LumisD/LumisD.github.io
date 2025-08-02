@@ -42,8 +42,26 @@
   .job-summary {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: bold;
     margin-bottom: var(--space-sm);
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .job-summary::marker {
+    content: ""; /* Hide default */
+  }
+
+  .job-details summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: transform 0.2s ease;
+  }
+
+  .job-details[open] summary::before {
+    content: "▼";
   }
 
   .job-description {
@@ -155,8 +173,26 @@
   .job-summary {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: bold;
     margin-bottom: var(--space-sm);
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .job-summary::marker {
+    content: ""; /* Hide default */
+  }
+
+  .job-details summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: transform 0.2s ease;
+  }
+
+  .job-details[open] summary::before {
+    content: "▼";
   }
 
   .job-description {
