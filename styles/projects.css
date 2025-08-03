@@ -101,21 +101,21 @@
 
   .job-description ul {
     padding-left: var(--space-md-lg);
-    list-style: disc;
+    list-style: none;
   }
 
   .job-description li {
-    margin-bottom: var(--space-md);
-    border-bottom: 1px solid var(--color-border);
-    padding-bottom: var(--space-sm);
+    position: relative;
+    padding-left: var(--space-md);
+    margin-bottom: var(--space-sm);
   }
 
   .job-description li::before {
     content: "•";
     color: var(--color-primary);
-    display: inline-block;
-    width: var(--space-md);
-    margin-left: calc(-1 * var(--space-md));
+    position: absolute;
+    left: 0;
+    font-weight: bold;
   }
 
   .date {
@@ -254,21 +254,21 @@
 
   .job-description ul {
     padding-left: var(--space-md-lg);
-    list-style: disc;
+    list-style: none;
   }
 
   .job-description li {
-    margin-bottom: var(--space-md-lg);
-    border-bottom: 1px solid var(--color-border);
-    padding-bottom: var(--space-md);
+    position: relative;
+    padding-left: var(--space-md);
+    margin-bottom: var(--space-sm);
   }
 
   .job-description li::before {
     content: "•";
     color: var(--color-primary);
-    display: inline-block;
-    width: var(--space-md);
-    margin-left: calc(-1 * var(--space-md));
+    position: absolute;
+    left: 0;
+    font-weight: bold;
   }
 
   nav {
