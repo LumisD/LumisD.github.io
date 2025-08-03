@@ -41,7 +41,7 @@
 
   .job-summary {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     font-weight: bold;
     margin-bottom: var(--space-sm);
@@ -153,6 +153,21 @@
     font-size: var(--font-sm);
     color: var(--color-footer);
   }
+
+  .screenshots-row {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-sm);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .screenshots-row img {
+    width: 120px;
+    height: auto;
+    border-radius: var(--space-xs);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* ===== Desktop Styles (≥768px) ===== */
@@ -194,7 +209,7 @@
 
   .job-summary {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     font-weight: bold;
     margin-bottom: var(--space-sm);
@@ -300,5 +315,20 @@
     margin-top: var(--space-xxl);
     font-size: var(--font-sm);
     color: var(--color-footer);
+  }
+
+  .screenshots-row {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-sm);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .screenshots-row img {
+    width: 120px;
+    height: auto;
+    border-radius: var(--space-xs);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   }
 }
