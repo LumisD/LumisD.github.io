@@ -20,7 +20,7 @@ body {
 
 /* Left block: Name + photo */
 .hero-left {
-  width: 200px;
+  width: 300px;
   float: left;
   text-align: center;
 }
@@ -29,8 +29,8 @@ body {
   margin-bottom: var(--space-sm-md);
 }
 .profile-photo {
-  width: 140px;
-  height: 140px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -165,8 +165,8 @@ main {
   }
 
   .profile-photo {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
     margin-top: var(--space-sm);
